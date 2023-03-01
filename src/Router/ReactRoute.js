@@ -7,6 +7,7 @@ import Contact from "../Pages/Contact";
 import Services from "../Pages/Services";
 import Team from "../Pages/Team";
 import Testimonials from "../Pages/Testimonials";
+import Error from "../Pages/Error";
 
 function ReactRoute() {
   return (
@@ -21,6 +22,7 @@ function ReactRoute() {
         <Route path="services" element={<Services />} />
         <Route path="team" element={<Team />} />
         <Route path="testimonials" element={<Testimonials />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </>
   );
