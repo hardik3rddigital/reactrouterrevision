@@ -1,8 +1,24 @@
 import React from 'react'
+import SectionDivider from '../SmallComponents/SectionDivider'
+import SectionTitle from '../SmallComponents/SectionTitle'
+import { DaulColor } from '../CSS/VariableCSS'
 
 function Careers() {
   return (
-    <div>Careers</div>
+    <>
+      <div className="Careers mt-5">
+      <div className="container">
+          <div className="">
+            <SectionTitle
+              Before="Open"
+              After="Positions"
+              DaulColor={DaulColor}
+            />
+            <SectionDivider />
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 
