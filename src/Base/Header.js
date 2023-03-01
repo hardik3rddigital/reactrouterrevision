@@ -1,6 +1,8 @@
 import React from "react";
 import HeaderData, { HeaderMenubar } from "../Json/HeaderData";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+import '../CSS/Header.css'
 
 function Header() {
   return (
@@ -10,24 +12,24 @@ function Header() {
           <div className="container">
             <div className="header-section py-3 d-flex align-items-center justify-content-between">
               <div className="header-logo">
-                <Link to="/">
+                <NavLink to="/">
                   <img
                     src={HeaderData.logo}
                     alt={HeaderData.alternate}
                     className="img-fluid"
                   />
-                </Link>
+                </NavLink>
               </div>
               <div className="header-menu">
                 <ul className="menubar d-flex align-items-center m-0 p-0">
                   {HeaderMenubar.map(({ name, path }, index) => (
                     <li className="menu-item ms-4 list-unstyled" key={index}>
-                      <Link
+                      <NavLink
                         to={path}
                         className="text-capitalize text-decoration-none text-dark"
                       >
                         {name}
-                      </Link>
+                      </NavLink>
                     </li>
                   ))}
                 </ul>
