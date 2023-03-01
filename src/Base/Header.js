@@ -2,7 +2,7 @@ import React from "react";
 import HeaderData, { HeaderMenubar } from "../Json/HeaderData";
 import { NavLink } from "react-router-dom";
 
-import '../CSS/Header.css'
+import "../CSS/Header.css";
 
 function Header() {
   return (
@@ -26,7 +26,7 @@ function Header() {
                     <li className="menu-item ms-4 list-unstyled" key={index}>
                       <NavLink
                         to={path}
-                        className="text-capitalize text-decoration-none text-dark"
+                        className="text-capitalize text-decoration-none"
                       >
                         {name}
                       </NavLink>

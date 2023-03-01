@@ -1,3 +1,31 @@
+const AboutDataTitleDescription = {
+  titleDescription:
+    "We build iOS Apps, Android Apps, Websites, AR Apps, IOT Apps, Cognitive personal assistants, AI powered chat bots, Apple TV Apps, Apple Watch Apps, Alexa skills and custom software. We solve your problems with efficient and affordable solutions. Our developers are extremely well versed in their technical backgrounds, and our global presence allows us to work quickly and effectively with clients.",
+  titleDescriptionSmall:
+    "Three Ways that 3rdDigital can  make your life easier",
+};
+
+const AboutDataSingleAbout = [
+  {
+    title: "Custom Solutions",
+    description:
+      "From MVP to full market ready product build.  We take you all the way",
+  },
+  {
+    title: "Tech Stack Transfer",
+    description:
+      "We can take your current platform, maintain, bugfix and enhance it.",
+  },
+  {
+    title: "Team Sourcing",
+    description:
+      "Access the skills you need quickly and cost effectively. Pay As You Go.",
+  },
+];
+
+const AboutDataWeDoDescription =
+  "Everything to convert your idea into a complete product.";
+
 const AboutDataWeDo = [
   {
     name: "Mobile Apps",
@@ -73,4 +101,5 @@ const AboutDataWeDo = [
   },
 ];
 
-export default AboutDataWeDo
+export default AboutDataWeDo;
+export {AboutDataTitleDescription,AboutDataSingleAbout,AboutDataWeDoDescription}

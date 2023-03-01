@@ -8,19 +8,22 @@ import Services from "../Pages/Services";
 import Team from "../Pages/Team";
 import Testimonials from "../Pages/Testimonials";
 import Error from "../Pages/Error";
+import Home from "../Pages/Home";
+import Portfolio from "../Pages/Portfolio";
 
 function ReactRoute() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<></>} />
-        <Route path="home" element={<></>} />
+        <Route path="" element={Home}/>
+        <Route path="home"/>
         <Route path="about" element={<About />} />
         <Route path="blog" element={<Blog />} />
         <Route path="careers" element={<Careers />} />
         <Route path="contact" element={<Contact />} />
         <Route path="services" element={<Services />} />
         <Route path="team" element={<Team />} />
+        <Route path="portfolio" element={<Portfolio />} />
         <Route path="testimonials" element={<Testimonials />} />
         <Route path="*" element={<Error />} />
       </Routes>

@@ -12,8 +12,6 @@ function App() {
         <ReactRoute />
       </BrowserRouter>
 
-      <h1>Hello I am app components</h1>
-
       <Footer />
     </>
   );
